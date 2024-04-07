@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Script</title>
+    <link rel="stylesheet" href="static/styles/contact.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&family=Rajdhani:wght@300&display=swap" rel="stylesheet">            
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:ital,wght@0,100;0,400;1,100&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="check_btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <label class="logo">
+                    <img src="static/images/logo.png" alt="">
+                    
+                </label>
+                <ul>
+                    <li><a class="head" href="http://127.0.0.1:5000/">Home</a></li>
+                    <li><a class="head" href="http://127.0.0.1:5000/about">About us</a></li>
+                    <li><a class="head" href="http://127.0.0.1:5000/contact">Contact us</a></li>
+                    
+                </ul>
+            </div>
+        </header>
+
+         <!-- -----------------------------------contact us------------------------------ -->
+         <div class="contact">
+            <div class="container">
+                <div class="row">
+                        <h1>Contact us</h1>
+                </div>
+                <form action="https://formspree.io/f/xyyqagkw" method="POST">
+                    <div class="row input-container">
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <input type="text" required name="name" />
+                                <label>Name</label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input">
+                                <input type="text" required name="email"/>
+                                <label>Email</label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input" style="float:right;">
+                                <input type="text" required name="Phone Number" />
+                                <label>Phone Number</label> 
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea required name="message"></textarea>
+                                <label>Message</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <button class="btn-lrg submit-btn">Send Message</button>
+                        </div>
+                </div>
+                </form>
+                
+            </div>
+            
+         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="static/js/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Script</title>
+    <link rel="stylesheet" href="static/styles/main.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&family=Rajdhani:wght@300&display=swap" rel="stylesheet">            
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:ital,wght@0,100;0,400;1,100&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="navigation">
+                
+                
+                <label class="logo">
+                    <img src="static/images/logo.png" alt="">
+                    
+                </label>
+                <!-- <h2 >
+                   Username
+                <h2> -->
+            </div>
+        </header>
+        <form action="{{ url_for('predict')}}" method="post">
+            
+            <div class="wrap">
+                <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?" name="jobDescription">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                </div>
+            </div>
+        </form>
+        <div class="questions" style="margin-top: 20%; z-index: 999;margin-left: 35%;">
+            {% for question in prediction_text %}
+            <p class="question" style="margin-top: 15px; z-index: 999; white-space: pre-line;color: white;">{{ question }}</p>
+            {% endfor %}
+        </div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="js/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

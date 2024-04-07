@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Form</title>
+    <style>
+        p{
+            color: white;
+            font-size: 55px; 
+            font-weight: bold;
+            margin: 0;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightblue;">
+    <div style="display: flex;">
+        <div style="width: 55%;margin-top: 5%;margin-left: 3%;">
+            <p >Hi,</p>
+            <p>I am a Question Generator.</p>
+            <p >Enter a topic</p>
+            <p>I will generate some questions for you.</p>
+        </div>
+        <div style="background-color: white;width: 20%;height: 300px;margin-top: 10%;margin-right: 7%;margin-left: 4%;">
+            <p style="color: black;font-size: 25px;font-weight: bold;margin-top: 25%;margin-left: 20%;">Enter the topic:</p>
+           <form action="{{ url_for('predict')}}" method="post" >
+            <input type="text" name="user_input" placeholder="Enter the topic" style="margin-top: 5%;margin-left: 20%;">
+            <br>
+            <button type="submit" style="background-color: rgb(210, 74, 40); color: white; margin-top: 15%;margin-left: 60%;border-color: rgb(246, 245, 242);">predict</button>
+           </form>
+        </div>
+    </div>
+    <br>
+    <div  style="background-color: white; color: black; margin-top: 5%;margin-left: 7%;border-color: rgb(246, 245, 242);width: 80%;display: flex;justify-content: center;">
+        <p id="prediction_text" style="font-size: 20px;margin: 0;color: black;">{{prediction_text}}</p>
+    </div>
+
+</body>
+
+</html>

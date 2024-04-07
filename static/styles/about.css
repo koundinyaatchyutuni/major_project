@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgba(28,35,41,255) ;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid transparent;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 10px 5%;
+    background-color: rgba(255, 255,255,0.2);
+    backdrop-filter: blur(10px);
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+}
+
+header .navigation ul{
+    float: right;
+    margin-right: 20px;
+}
+
+header .navigation ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+header .navigation ul li a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+header .navigation ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+    transition: transform .5s;
+    box-shadow: 0 0 10px (255,255,255,0.8);
+    background: linear-gradient(to right,#fff, #f3f3f3);
+}
+
+header .navigation ul li a:hover::after{
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+header .navigation ul li .btnLogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+  
+}
+
+header .navigation ul li .btnLogin:hover{
+    background-color: #424652;
+    color: #fff;
+}
+
+ul li a.active, ul li a:hover{
+    background: #424652;
+    transition: .5s;
+}
+
+.check_btn{
+    font-size: 25px;
+    color: #fff;
+    float: left;
+    line-height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media(max-width:540px){
+    .check_btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 40%;
+        height: 70vh;
+        background:rgba(66,70,82,255);
+        top: 100px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        border: 2px solid #c9c8c8;
+        border-radius: 6px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+    header .navigation ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header .navigation ul li a{
+        font-size: 20px;
+
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .cover_box_style{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    
+}
+
+/* logo */
+ header .navigation .logo img{
+    height: 30px;
+    width: 180px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.about{
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-content h2{
+    color: #f3f3f3;
+    font-size: 3rem;
+    align-items: center;
+    margin-top: -280px;
+    margin-left: 45%;
+}
+
+.about-content p{
+    color: #f3f3f3;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-left: 15%;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-top: 50px;
+    margin-left: 95px;
+  }
+  
+.row {margin: 0 15px;}
+
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.card {
+    padding: 16px;
+    text-align: center;
+    background-color: #555968;
+    height: 350px;
+}
+
+.card h3{
+    font-weight: 500;
+    font-size: 1.9rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card p{
+    margin-left: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}  
+

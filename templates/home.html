@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Script</title>
+    <link rel="stylesheet" href="static/styles/home.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&family=Rajdhani:wght@300&display=swap" rel="stylesheet">            
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:ital,wght@0,100;0,400;1,100&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body{
+        background: url('static/images/finale-bg.jpg') no-repeat;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-position: center;
+    background-size: cover;
+    }
+  </style>
+</head>
+<body>
+        <header>
+            <div class="navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="check_btn" >
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <label class="logo">
+                    <img src="static/images/logo.png" alt="">
+                    
+                </label>
+                <ul >
+                    <li><a class="head" href="http://127.0.0.1:5000/">Home</a></li>
+                    <li><a class="head" href="http://127.0.0.1:5000/about">About us</a></li>
+                    <li><a class="head" href="http://127.0.0.1:5000/contact">Contact us</a></li>
+                    <li><a class="btnLogin" href="http://127.0.0.1:5000/main">MAIN</a></li>
+                </ul>
+            </div>
+        </header>
+        <!------------------------------------------home-------------------------------------------->
+        <section id="home" class="home">
+            
+            <div class="home-content-right" id="home-content-right">
+                <img src="static/images/home-img.png" alt="">
+                <div class="under-pic">
+                    <i class="fa-solid fa-user"></i>
+                    <h3 >
+                        <span class="typing">Ask Us</span>
+                    </h3>
+                </div>
+                
+            </div>
+        </section>
+        
+         <div id="cover_box" class="cover_box" style="display:none">
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span> 
+            <!---------------------------------login----------------------------------------------------------->
+            <!-- <div  class="form-box login" id="login" style="display: none;" >
+                <h2>Login</h2>
+                <form action="/login" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required name="email" placeholder="Email">
+                       
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required name="password" placeholder="Password">
+                      
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div> -->
+<!-- ------------------------------------register----------------------------------------------------------- -->
+            <!-- <div id="register" class="form-box register" style="display: none;" >
+                <h2>Register</h2>
+                <form action="/register" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required placeholder="Username" name="userName">
+                       
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required placeholder="Email" name="email">
+                       
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required placeholder="Password" name="password">
+                        
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+         </div>  -->
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="static/js/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
